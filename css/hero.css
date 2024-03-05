@@ -15,7 +15,14 @@
 .hero .text {
     margin-bottom: 3rem;
 }
-
+.hero__block {
+    margin-bottom: 2rem;
+}
+.hero__img {
+    width: 100%;
+    max-width: 50rem;
+    margin: 0 auto;
+}
 
 
 .policy__wrapper {
@@ -60,11 +67,29 @@
 
 @media screen and (min-width: 1440px)  {
     .hero {
-        text-align: center;
-        padding: 24rem 0;
+        text-align: left;
+        padding: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5rem;
     }
+    .hero__block {
+        margin: 0;
+        max-width: 50rem;
+}
+.hero .text {
+    max-width: 40rem;
+}
+.hero__img {
+    margin: 0;
+    width: 50rem;
+    height: 60rem;
+    object-fit: cover;
+}
     .hero .btn {
         padding-left: 8rem;
         padding-right: 8rem;
+        margin-left: 0;
     }
 }
